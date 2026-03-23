@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--f-sans, "Inter", ui-sans-serif, system-ui, sans-serif);
+  --font-display: var(--f-display, "Space Grotesk", sans-serif);
+  --font-mono: var(--f-mono, "JetBrains Mono", ui-monospace, SFMono-Regular, monospace);
+  --font-serif: "Lora", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --color-hn-orange: #ff6600;
+  --color-hn-bg: #f6f6ef;
+
+  --color-theme-bg: var(--bg);
+  --color-theme-text: var(--text);
+  --color-theme-border: var(--border);
+  --color-theme-card: var(--card);
+  --color-theme-muted: var(--muted);
+  --color-theme-accent: var(--accent);
+}
+
+@layer base {
+  :root {
+    --bg: #fafafa;
+    --text: #18181b;
+    --border: #e4e4e7;
+    --card: #ffffff;
+    --muted: #71717a;
+    --accent: #f97316;
+    --f-sans: "Inter", sans-serif;
+    --f-display: "Space Grotesk", sans-serif;
+  }
+
+  [data-theme='dark'] {
+    --bg: #09090b;
+    --text: #fafafa;
+    --border: #27272a;
+    --card: #18181b;
+    --muted: #a1a1aa;
+    --accent: #fb923c;
+  }
+
+  [data-theme='sepia'] {
+    --bg: #f4ecd8;
+    --text: #5b4636;
+    --border: #e3d5b8;
+    --card: #fdf6e3;
+    --muted: #8f7e6a;
+    --accent: #b58900;
+  }
+
+  [data-theme='high-contrast'] {
+    --bg: #000000;
+    --text: #ffffff;
+    --border: #ffffff;
+    --card: #000000;
+    --muted: #cccccc;
+    --accent: #ffff00;
+  }
+
+  [data-font='serif'] {
+    --f-sans: "Lora", serif;
+    --f-display: "Lora", serif;
+  }
+
+  [data-font='outfit'] {
+    --f-sans: "Outfit", sans-serif;
+    --f-display: "Outfit", sans-serif;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    @apply font-sans antialiased selection:bg-orange-100 selection:text-orange-900 transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background-color: var(--card);
+    border-color: var(--border);
+    @apply backdrop-blur-md border shadow-sm;
+  }
+
+  .hn-button {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 active:scale-95 disabled:opacity-50;
+  }
+}
