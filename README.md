@@ -2,6 +2,17 @@
 
 A modern, high-performance, and highly customizable Hacker News client built for the next generation of tech enthusiasts.
 
+
+### Screenshots
+
+<img width="1309" height="1286" alt="Screenshot at Mar 23 19-01-48" src="https://github.com/user-attachments/assets/2dbbae53-2b6d-4030-be0c-ed83cda31027" />
+<img width="1347" height="1251" alt="Screenshot at Mar 23 19-02-13" src="https://github.com/user-attachments/assets/2f1416e0-7f12-4eb9-a311-4341b17de9ee" />
+<img width="1340" height="1239" alt="Screenshot at Mar 23 19-02-24" src="https://github.com/user-attachments/assets/ca365790-14b6-4c08-9ded-1066b8def9b8" />
+<img width="1267" height="1247" alt="Screenshot at Mar 23 19-02-40" src="https://github.com/user-attachments/assets/27d68e69-24f1-483c-acf0-0c4cd401a48b" />
+<img width="1265" height="1245" alt="Screenshot at Mar 23 19-02-51" src="https://github.com/user-attachments/assets/05cec97e-dbdc-45e1-b5b4-bfc7c5d97bd0" />
+<img width="1322" height="1246" alt="Screenshot at Mar 23 19-03-02" src="https://github.com/user-attachments/assets/038bc2f8-0e80-4f2b-ab56-c7a7a98f714d" />
+<img width="1175" height="1244" alt="Screenshot at Mar 23 19-03-57" src="https://github.com/user-attachments/assets/66ab0da3-e3b8-4099-8af9-786c987cd46a" />
+
 ## Why I Built This
 
 Hacker News is the heartbeat of the tech world, but its interface hasn't changed much in decades. I wanted to create a reading experience that respects the original's simplicity while embracing modern web standards. **Hacker News 2026** is my vision of a "pro" reading environment—fast, accessible, and deeply customizable.
